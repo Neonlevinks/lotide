@@ -8,7 +8,12 @@ const assertEqual = function(actual, expected) {
 
 const tail = (array) => {
   let result = [];
-  for (let i = 1; i <= array.length; i++) {
+  for (let i = 1; i < array.length; i++) {
     result.push(array[i]);
   }
+  console.log(result);
+  return result;
 };
+
+//TEST CODE
+assertEqual((tail(["a", "s", "d"])).length, 2); //tail should have 1 less length than the original array
