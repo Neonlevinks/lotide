@@ -5,3 +5,7 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
+const eqArrays = (array1, array2) => {
+  array1.join() === array2.join() ? true : false ;
+};
