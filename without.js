@@ -22,5 +22,22 @@ const assertArraysEqual = (array1, array2) => {
   }
 };
 
-const without = 
-}
+const without = (originArray, removalArray) => {
+  let resultArray = [];
+  for (let i = 0; i < originArray.length; i++) {
+    let findMatch = false;
+    for (let j = 0; j < removalArray.length; j++) {
+      if (removalArray[j] === originArray[i]) {
+        findMatch = true;
+      }
+      
+    }
+    if (!findMatch) {
+      resultArray.push(originArray[i]);
+    }
+  }
+  return resultArray;
+};
+
+assertArraysEqual((without([1, 2, 3], [1])), [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]),["1", "2"]);
