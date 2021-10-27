@@ -22,6 +22,18 @@ const assertArraysEqual = (array1, array2) => {
   }
 };
 
+const middle = (array) => {
+  let result = [];
+  if (array.length <= 2) {
+    if (array.length % 2 === 0) {//if the length is even
+      result.push(mid)
+    } else if (array.length % 2 !== 0) {//if the length is odd
+      result.push(mid)
+    }
+    
+  }
+}
+
 //TEST CODE
 middle([1, 2, 3]) // => [2]
 middle([1, 2, 3, 4, 5]) // => [3]
