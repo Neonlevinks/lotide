@@ -21,3 +21,18 @@ const assertArraysEqual = (array1, array2) => {
     console.log(`🛑🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
   }
 };
+
+const letterPositions = (sentence) => {
+  const results = {};
+  for (const index in sentence) {
+    let letter = sentence[index];
+    let indexToNum = parseInt(index);
+    results[letter] ? results[letter].push(indexToNum) : results[letter] = [indexToNum];
+  }
+
+  return results;
+}
+
+
+
+assertArraysEqual(letterPositions("hello")["e"], [1])
