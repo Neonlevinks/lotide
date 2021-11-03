@@ -11,3 +11,13 @@ const bestTVShowsByGenre = {
   comedy: "Monty Python",
   drama: "Squid Game"
 }
+
+const findKeyByValue = (bestTVShowsByGenre, genreRequest) => {
+  let resultShow = "";
+  for (const index in bestTVShowsByGenre) {
+    genreRequest === bestTVShowsByGenre[index] ? resultShow += index : undefined;
+  }
+
+  return resultShow;
+};
+
