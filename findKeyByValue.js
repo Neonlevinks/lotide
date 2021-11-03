@@ -5,3 +5,9 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
+const bestTVShowsByGenre = {
+  sci_fi: "Doctor Who",
+  comedy: "Monty Python",
+  drama: "Squid Game"
+}
