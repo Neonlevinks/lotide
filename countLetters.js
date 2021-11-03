@@ -24,4 +24,3 @@ const countLetters = (inputString) => {
   return results;
 }
 
-countLetters("lighthouse in the house");
