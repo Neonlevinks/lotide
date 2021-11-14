@@ -1,10 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
 const tail = (array) => {
   let result = [];
@@ -15,7 +8,4 @@ const tail = (array) => {
   return result;
 };
 
-//TEST CODE
-assertEqual((tail(["a", "s", "d"])).length, 2); //tail should have 1 less length than the original array
-assertEqual((tail([])).length, 0); //the tail of an empty array should have a length of zero
-assertEqual((tail(["a"])).length, 0); //the tail of an empty array should have a length of zero
+module.exports = tail; 

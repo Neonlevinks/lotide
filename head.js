@@ -13,3 +13,5 @@ assertEqual(head([5,6,7]), 6);//should fail;
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Labs");//should fail
 assertEqual(head([5]), 5);//testing array of 1 item, should pass
 assertEqual(head([]), undefined);//testing empty array, should pass
+
+module.exports = head;
