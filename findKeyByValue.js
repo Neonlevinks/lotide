@@ -22,3 +22,5 @@ const findKeyByValue = (bestTVShowsByGenre, genreRequest) => {
 };
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "Doctor Who"), "sci_fi");
+
+module.exports = findKeyByValue;
